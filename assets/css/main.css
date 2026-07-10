@@ -161,6 +161,8 @@ body{
 }
 
 .start-btn{
+    display: inline-block;
+    text-decoration: none;
 
     padding:18px 45px;
 
@@ -226,7 +228,7 @@ body{
 
     filter:blur(120px);
 
-    animation:float 10s ease-in-out infinite;
+    animation:float 6s ease-in-out infinite alternate;
 
 }
 
@@ -241,46 +243,47 @@ body{
     top:-100px;
 
     left:-100px;
+    animation-duration:8s;
 
 }
 
 .circle2{
 
     width:400px;
-
     height:400px;
-
     background:#9333EA;
 
     bottom:-120px;
-
     right:-120px;
 
-    animation-delay:3s;
-
+    animation-duration:10s;
+    animation-delay:2s;
 }
 
 @keyframes float{
 
     0%{
+        transform:translate(0,0) scale(1);
+    }
 
-        transform:translateY(0px);
-
+    25%{
+        transform:translate(40px,-50px) scale(1.08);
     }
 
     50%{
+        transform:translate(-30px,-90px) scale(0.95);
+    }
 
-        transform:translateY(-40px);
-
+    75%{
+        transform:translate(50px,-40px) scale(1.05);
     }
 
     100%{
-
-        transform:translateY(0px);
-
+        transform:translate(0,0) scale(1);
     }
 
 }
+
 @keyframes fadeUp{
 
     from{
@@ -301,3 +304,232 @@ body{
 
 }
 /* code here */
+/* ========================= */
+/* LOGIN PAGE */
+/* ========================= */
+
+.login-card {
+    width: 420px;
+    max-width: 90%;
+    margin: 120px auto;
+    padding: 45px;
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border: 1px solid rgba(255,255,255,0.12);
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.45);
+
+    animation: fadeUp 0.8s ease;
+}
+
+.login-card h1{
+    color:#9f5cff;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.login-card h2{
+    color:white;
+    margin-bottom:8px;
+}
+
+.login-card p{
+    color:#cfcfcf;
+    margin-bottom:25px;
+}
+
+.login-card input{
+
+    width:100%;
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:16px;
+}
+
+.login-card input::placeholder{
+    color:#bbbbbb;
+}
+
+.login-card button{
+
+    width:100%;
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#8b5cf6;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.login-card button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 25px #8b5cf6;
+}
+
+.signup-link{
+
+    margin-top:25px;
+}
+
+.signup-link a{
+
+    color:#9f5cff;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.signup-link a:hover{
+
+    color:white;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+/* ========================= */
+/* SIGN UP PAGE */
+/* ========================= */
+
+.signup-container{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.signup-card{
+
+    width:450px;
+
+    background:rgba(255,255,255,0.08);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(20px);
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+.signup-card h1{
+
+    color:white;
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.signup-card p{
+
+    color:#d8d8d8;
+
+    margin-bottom:25px;
+
+}
+
+.signup-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.signup-card input{
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+}
+
+.signup-card input::placeholder{
+
+    color:#d4d4d4;
+
+}
+
+.signup-card button{
+
+    margin-top:10px;
+
+}
+
+.signup-card a{
+
+    color:#8B5CF6;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
