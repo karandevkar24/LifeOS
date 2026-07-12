@@ -6,16 +6,72 @@
     <title>LifeOS Dashboard</title>
 
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
 </head>
+
 <body>
+    <div class="background">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+</div>
 
-<div class="glass-card">
+<div class="dashboard">
 
-    <h1>🎉 Welcome to LifeOS</h1>
+    <aside class="sidebar">
 
-    <p>Your dashboard is under construction.</p>
+        <h2>LifeOS</h2>
+
+        <nav>
+
+            <a href="#">🏠 Dashboard</a>
+            <a href="tasks.html">✅ Tasks</a>
+            <a href="#">🎓 Academics</a>
+            <a href="#">💪 Fitness</a>
+            <a href="#">🍎 Nutrition</a>
+            <a href="#">😴 Sleep</a>
+            <a href="#">📅 Calendar</a>
+            <a href="#">📈 Analytics</a>
+            <a href="#">⚙️ Settings</a>
+
+        </nav>
+
+    </aside>
+
+    <main class="content">
+
+        <h1 id="welcomeText">
+            Welcome to LifeOS
+        </h1>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Today's Tasks</h3>
+                <p>0 Completed</p>
+            </div>
+
+            <div class="card">
+                <h3>Protein</h3>
+                <p>0 g</p>
+            </div>
+
+            <div class="card">
+                <h3>Calories</h3>
+                <p>0 kcal</p>
+            </div>
+
+            <div class="card">
+                <h3>Current CGPA</h3>
+                <p>8.91</p>
+            </div>
+
+        </div>
+
+    </main>
 
 </div>
+
+<script src="assets/js/dashboard.js"></script>
 
 </body>
 </html>

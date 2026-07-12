@@ -26,9 +26,9 @@ signupForm.addEventListener("submit", function (event) {
 
     // Save user
     const user = {
-        fullName,
-        email,
-        password
+    name: fullName,
+    email,
+    password
     };
 
     localStorage.setItem("lifeosUser", JSON.stringify(user));
