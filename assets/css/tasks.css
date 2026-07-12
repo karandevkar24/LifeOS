@@ -144,3 +144,42 @@ body{
     cursor:pointer;
 
 }
+.completed{
+
+    text-decoration:line-through;
+
+    opacity:.7;
+
+    color:#6EE7B7;
+
+}
+
+.task-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.task input[type="checkbox"]{
+
+    width:20px;
+
+    height:20px;
+
+    cursor:pointer;
+
+}
+
+#progressText{
+
+    margin-bottom:20px;
+
+    color:#A855F7;
+
+    text-align:center;
+
+}
