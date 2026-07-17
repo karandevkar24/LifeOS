@@ -224,3 +224,134 @@ body{
     color:white;
 
 }
+.subject-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(255,255,255,0.05);
+
+    padding:18px 22px;
+
+    margin-top:18px;
+
+    border-radius:18px;
+
+    transition:.3s;
+}
+
+.subject-item:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.subject-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.subject-icon{
+    width:50px;
+    height:50px;
+
+    border-radius:15px;
+
+    background:linear-gradient(135deg,#8b5cf6,#6d28d9);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:22px;
+}
+
+.subject-name{
+    font-size:20px;
+    font-weight:600;
+}
+
+.subject-percent{
+    color:#b26cff;
+    font-size:24px;
+    font-weight:700;
+}
+
+.delete-btn{
+    background:#ff4b5c;
+
+    border:none;
+
+    color:white;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.delete-btn:hover{
+    background:#ff1e3c;
+    transform:scale(1.05);
+}
+.subject-percent{
+    width:260px;
+}
+
+.percent-text{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#b26cff;
+
+    margin-bottom:8px;
+}
+
+.progress{
+
+    width:100%;
+
+    height:10px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+
+    overflow:hidden;
+}
+
+.progress-fill{
+
+    height:100%;
+
+    width:0%;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #8b5cf6,
+        #b26cff
+    );
+
+    transition:1s;
+}
+.subject-status{
+
+    margin-top:10px;
+
+    font-size:13px;
+
+    color:#cfcfcf;
+
+    font-weight:600;
+
+    letter-spacing:.4px;
+}
