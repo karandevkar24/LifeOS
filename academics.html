@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Academics | LifeOS</title>
 
-    <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/academics.css">
+
 </head>
 
 <body>
 
-<div class="background">
-    <div class="circle circle1"></div>
-    <div class="circle circle2"></div>
+<div class="sidebar">
+
+    <h1>LifeOS</h1>
+
+    <a href="dashboard.html">🏠 Dashboard</a>
+
+    <a href="tasks.html">✅ Tasks</a>
+
+    <a href="academics.html" class="active">🎓 Academics</a>
+
 </div>
 
-<div class="academics-container">
+<div class="content">
 
     <h1>🎓 Academics</h1>
 
-    <div class="stats">
+    <div class="stats-grid">
 
         <div class="stat-card">
-            <h3>Current CGPA</h3>
-            <p id="cgpaValue">8.91</p>
+            <h3>🎓 Current CGPA</h3>
+            <h1 id="cgpaValue">8.91</h1>
         </div>
 
         <div class="stat-card">
-            <h3>Assignments</h3>
-            <p id="assignmentCount">0</p>
+            <h3>📚 Subjects</h3>
+            <h1 id="subjectCount">0</h1>
         </div>
 
         <div class="stat-card">
-            <h3>Attendance</h3>
-            <p id="attendanceValue">0%</p>
+            <h3>📈 Average Marks</h3>
+            <h1 id="averageMarks">0%</h1>
         </div>
 
-        <div class="stat-card">
-            <h3>Class Tests</h3>
-            <p id="testCount">0</p>
+    </div>
+
+    <div class="subject-card">
+
+        <h2>Add Subject</h2>
+
+        <input
+            id="subjectName"
+            placeholder="Subject Name">
+
+        <input
+            id="subjectMarks"
+            type="number"
+            placeholder="Marks">
+
+        <button id="addSubjectBtn">
+
+            Add Subject
+
+        </button>
+
+    </div>
+
+    <div class="subject-list">
+
+        <h2>Your Subjects</h2>
+
+        <div id="subjectsContainer">
+
         </div>
 
     </div>
@@ -49,4 +86,5 @@
 <script src="assets/js/academics.js"></script>
 
 </body>
+
 </html>

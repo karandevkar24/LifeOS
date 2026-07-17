@@ -21,7 +21,7 @@ addTaskBtn.addEventListener("click", function () {
         text: taskText,
         completed: false
     });
-
+    addActivity("➕ Added: " + taskText);
     localStorage.setItem("tasks", JSON.stringify(tasks));
 
     taskInput.value = "";
@@ -85,7 +85,11 @@ function displayTasks() {
 // Delete Task
 function deleteTask(index){
 
+    const deletedTask = tasks[index].text;
+
     tasks.splice(index,1);
+
+    addActivity("🗑 Deleted: " + deletedTask);
 
     localStorage.setItem("tasks", JSON.stringify(tasks));
 
@@ -96,11 +100,23 @@ function toggleTask(index){
 
     tasks[index].completed = !tasks[index].completed;
 
+    if(tasks[index].completed){
+
+        addActivity("✅ Completed: " + tasks[index].text);
+
+    }else{
+
+        addActivity("↩ Marked Pending: " + tasks[index].text);
+
+    }
+
     localStorage.setItem("tasks", JSON.stringify(tasks));
 
     displayTasks();
 
 }
+
+
 function editTask(index){
 
     const newTask = prompt("Edit your task:", tasks[index].text);
@@ -119,5 +135,24 @@ function editTask(index){
     localStorage.setItem("tasks", JSON.stringify(tasks));
 
     displayTasks();
+
+}
+function addActivity(message){
+
+    let activities =
+    JSON.parse(localStorage.getItem("activities")) || [];
+
+    activities.unshift(message);
+
+    if(activities.length > 8){
+
+        activities.pop();
+
+    }
+
+    localStorage.setItem(
+        "activities",
+        JSON.stringify(activities)
+    );
 
 }

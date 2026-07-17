@@ -147,3 +147,152 @@
     font-weight:bold;
 
 }
+/* =======================
+   TOP BAR
+======================= */
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+#todayDate{
+
+    margin-top:10px;
+
+    color:#bbbbbb;
+
+}
+
+.profile{
+
+    background:rgba(255,255,255,.08);
+
+    padding:15px 22px;
+
+    border-radius:15px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+#liveClock{
+
+    margin-top:8px;
+
+    font-size:18px;
+
+    color:#8B5CF6;
+
+    font-weight:600;
+
+}
+/* ==========================
+      DAILY PROGRESS
+========================== */
+
+.progress-section{
+
+    margin-top:40px;
+
+}
+
+.progress-card{
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+.progress-card h2{
+
+    margin-bottom:25px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:18px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+#dailyProgress{
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#8B5CF6,#A855F7);
+
+    transition:1s;
+
+}
+
+#progressText{
+
+    margin-top:18px;
+
+    font-size:18px;
+
+    color:#bbbbbb;
+
+}
+/* ===========================
+      RECENT ACTIVITY
+=========================== */
+
+
+.activity-card{
+
+    margin-top:35px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:20px;
+
+    padding:30px;
+
+}
+
+.activity-card h2{
+
+    margin-bottom:20px;
+
+}
+
+#activityList{
+
+    list-style:none;
+
+}
+
+#activityList li{
+
+    padding:12px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    color:#dddddd;
+
+}
